@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreatorPay™ Landing Page Template - Demo</title>
+  <meta name="description" content="High-converting landing page template for digital creators.">
+  <meta property="og:image" content="assets/preview-screenshot.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #0f0f0f; }
+    ::-webkit-scrollbar-thumb { background: #7c3aed; border-radius: 5px; }
+    
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #a78bfa 0%, #c084fc 50%, #e879f9 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .feature-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(124, 58, 237, 0.15);
+    }
+    
+    .cta-glow {
+      box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+    }
+    
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    .faq-answer.active {
+      max-height: 500px;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white font-sans antialiased">
+
+<!-- DEMO BANNER - REMOVE THIS IN PAID VERSION -->
+<div class="bg-gradient-to-r from-purple-600 to-pink-600 text-white text-center py-3 px-4 text-sm font-bold sticky top-0 z-[60]">
+  👋 This is a demo. Get this exact template for $39 → 
+  <a href="https://ochangaedwin.gumroad.com/l/bvxtu" target="_blank" class="underline hover:text-white ml-2 font-black">
+    Buy Now
+  </a>
+</div>
+<!-- END DEMO BANNER -->
+
+<!-- Navigation -->
+<nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-gray-800 top-[48px]">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold gradient-text">CreatorPay™</div>
+    <div class="hidden md:flex gap-8 text-sm items-center">
+      <a href="#features" class="hover:text-purple-400 transition">Features</a>
+      <a href="#demo" class="hover:text-purple-400 transition">Demo</a>
+      <a href="#testimonials" class="hover:text-purple-400 transition">Reviews</a>
+      <a href="https://ochangaedwin.gumroad.com/l/bvxtu" target="_blank" class="bg-purple-600 px-6 py-2 rounded-full hover:bg-purple-700 transition">Get Template</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center justify-center pt-32">
+  <div class="absolute inset-0 bg-gradient-to-b from-purple-900/10 to-transparent pointer-events-none"></div>
+  
+  <div class="relative z-10 text-center py-24 px-6 max-w-5xl mx-auto">
+    <p class="text-purple-400 mb-6 uppercase tracking-widest text-sm font-bold fade-in">Digital Product Template</p>
+    
+    <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight fade-in">
+      Launch & Sell Your Digital Product in <span class="gradient-text">24 Hours</span>
+    </h1>
+    
+    <p class="text-gray-400 text-xl mb-12 max-w-3xl mx-auto fade-in">
+      A premium, high-converting landing page designed for creators who want to start making money online fast — without coding.
+    </p>
+
+    <div class="flex justify-center gap-4 flex-wrap mb-12 fade-in">
+      <a href="https://ochangaedwin.gumroad.com/l/bvxtu" target="_blank" class="cta-glow bg-gradient-to-r from-purple-600 to-pink-600 px-10 py-5 rounded-2xl text-xl font-bold hover:from-purple-700 hover:to-pink-700 transition transform hover:scale-105 inline-block">
+        Get Template – $39
+      </a>
+      
+      <a href="#demo" class="border-2 border-gray-700 px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-gray-900 hover:border-purple-500 transition">
+        View Demo
+      </a>
+    </div>
+
+    <div class="flex justify-center gap-8 flex-wrap text-sm text-gray-400 fade-in">
+      <div class="flex items-center gap-2">
+        <span class="text-green-400 text-xl">✓</span>
+        <span>30-Day Money Back</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-green-400 text-xl">✓</span>
+        <span>Lifetime Updates</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-green-400 text-xl">✓</span>
+        <span>Secure Payment</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO SECTION -->
+<section id="demo" class="py-24 px-6 bg-gray-950 border-y border-gray-900">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center fade-in">
+      See What You're Getting
+    </h2>
+    <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto fade-in">
+      Preview the exact template you'll receive. Clean, professional, and ready to customize.
+    </p>
+    
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div class="relative group fade-in">
+        <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+        <div class="relative bg-gray-900 rounded-2xl p-2 border border-gray-800">
+          <div class="aspect-video bg-gray-800 rounded-xl flex items-center justify-center overflow-hidden">
+            <img src="assets/preview-screenshot.jpg" alt="Template Preview" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+      
+      <div class="space-y-6 fade-in">
+        <div class="flex gap-4 items-start">
+          <div class="w-8 h-8 bg-purple-600/20 rounded-lg flex items-center justify-center text-purple-400 flex-shrink-0">1</div>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Clean, Modern Design</h3>
+            <p class="text-gray-400 text-sm">Dark theme optimized for digital products and courses.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start">
+          <div class="w-8 h-8 bg-purple-600/20 rounded-lg flex items-center justify-center text-purple-400 flex-shrink-0">2</div>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Mobile-First Layout</h3>
+            <p class="text-gray-400 text-sm">Looks perfect on phones, tablets, and desktops.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start">
+          <div class="w-8 h-8 bg-purple-600/20 rounded-lg flex items-center justify-center text-purple-400 flex-shrink-0">3</div>
+          <div>
+            <h3 class="font-bold text-lg mb-1">Easy to Edit</h3>
+            <p class="text-gray-400 text-sm">Just change the text and images. No coding needed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="py-16 px-6 bg-black">
+  <div class="max-w-6xl mx-auto text-center">
+    <div class="flex justify-center gap-2 text-yellow-400 text-2xl mb-4 fade-in">
+      ★★★★★
+    </div>
+    <p class="text-gray-400 text-lg mb-12 fade-in">Rated 5/5 by early adopters</p>
+    
+    <div class="flex justify-center items-center gap-4 flex-wrap fade-in">
+      <div class="flex -space-x-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 border-2 border-black"></div>
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 border-2 border-black"></div>
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-emerald-400 border-2 border-black"></div>
+      </div>
+      <p class="text-gray-500 text-sm">From Nairobi to Lagos to Cape Town</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="py-24 px-6 bg-gray-950">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center fade-in">
+      Struggling to Sell Your <span class="text-red-400">Digital Product?</span>
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="feature-card bg-gray-900 p-8 rounded-2xl border border-gray-800 fade-in">
+        <div class="text-4xl mb-6">😰</div>
+        <p class="text-gray-200 font-bold text-xl mb-4">Your page looks amateur</p>
+        <p class="text-gray-500">Generic templates kill trust before you even pitch your value.</p>
+      </div>
+      <div class="feature-card bg-gray-900 p-8 rounded-2xl border border-gray-800 fade-in">
+        <div class="text-4xl mb-6">📉</div>
+        <p class="text-gray-200 font-bold text-xl mb-4">Visitors aren't buying</p>
+        <p class="text-gray-500">Missing conversion elements that turn browsers into customers.</p>
+      </div>
+      <div class="feature-card bg-gray-900 p-8 rounded-2xl border border-gray-800 fade-in">
+        <div class="text-4xl mb-6">⏰</div>
+        <p class="text-gray-200 font-bold text-xl mb-4">No time to design</p>
+        <p class="text-gray-500">Building from scratch takes weeks. You need revenue now.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section id="features" class="py-24 px-6 bg-black">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16 fade-in">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        This Template <span class="gradient-text">Fixes That</span>
+      </h2>
+      <p class="text-gray-400 text-xl max-w-3xl mx-auto">
+        Built with conversion psychology in mind.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="feature-card bg-gray-900 p-10 rounded-2xl border border-gray-800 fade-in">
+        <div class="text-4xl mb-6">🎨</div>
+        <h3 class="text-2xl font-bold mb-4">Conversion Design</h3>
+        <p class="text-gray-400">Strategic layouts based on psychological triggers that drive sales.</p>
+        <div class="mt-6 rounded-xl overflow-hidden h-48">
+          <img src="assets/feature-1.jpg" alt="Conversion Design" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+        </div>
+      </div>
+
+      <div class="feature-card bg-gray-900 p-10 rounded-2xl border border-gray-800 fade-in">
+        <div class="text-4xl mb-6">📱</div>
+        <h3 class="text-2xl font-bold mb-4">Fully Responsive</h3>
+        <p class="text-gray-400">70% of sales happen on mobile. This template is built mobile-first.</p>
+        <div class="mt-6 rounded-xl overflow-hidden h-48">
+          <img src="assets/feature-2.jpg" alt="Responsive Design" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+        </div>
+      </div>
+
+      <div class="feature-card bg-gray-900 p-10 rounded-2xl border border-gray-800 fade-in">
+        <div class="text-4xl mb-6">⚡</div>
+        <h3 class="text-2xl font-bold mb-4">Beginner Friendly</h3>
+        <p class="text-gray-400">No coding. Edit text, add your images, connect your payment link.</p>
+        <div class="mt-6 rounded-xl overflow-hidden h-48">
+          <img src="assets/feature-3.jpg" alt="Easy Editing" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE STACK -->
+<section id="pricing" class="py-24 px-6 bg-gray-950">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center fade-in">
+      Everything You <span class="gradient-text">Get</span>
+    </h2>
+
+    <div class="bg-gray-900 p-10 rounded-3xl border border-gray-800 shadow-2xl fade-in">
+      <div class="space-y-6">
+        <div class="flex items-center gap-4 p-4 bg-black/30 rounded-xl">
+          <span class="text-green-400 text-2xl">✔</span>
+          <div>
+            <p class="font-bold text-lg">Complete Landing Page</p>
+            <p class="text-gray-500 text-sm">Ready-to-use HTML file with all CSS included</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center gap-4 p-4 bg-black/30 rounded-xl">
+          <span class="text-green-400 text-2xl">✔</span>
+          <div>
+            <p class="font-bold text-lg">Responsive Design</p>
+            <p class="text-gray-500 text-sm">Optimized for desktop, tablet, and mobile screens</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center gap-4 p-4 bg-black/30 rounded-xl">
+          <span class="text-green-400 text-2xl">✔</span>
+          <div>
+            <p class="font-bold text-lg">Setup Instructions</p>
+            <p class="text-gray-500 text-sm">Step-by-step text guide to customize in 30 minutes</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center gap-4 p-4 bg-black/30 rounded-xl">
+          <span class="text-green-400 text-2xl">✔</span>
+          <div>
+            <p class="font-bold text-lg">Commercial License</p>
+            <p class="text-gray-500 text-sm">Use for unlimited personal projects and client work</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center gap-4 p-4 bg-black/30 rounded-xl">
+          <span class="text-green-400 text-2xl">✔</span>
+          <div>
+            <p class="font-bold text-lg">Image Placeholders</p>
+            <p class="text-gray-500 text-sm">4 template images to replace with your own screenshots</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-10 pt-8 border-t border-gray-700 text-center">
+        <p class="text-gray-400 mb-2">Investment</p>
+        <p class="text-5xl font-bold gradient-text mb-6">$39</p>
+        <p class="text-gray-500 text-sm mb-8">One-time payment. No subscriptions.</p>
+        
+        <a href="https://ochangaedwin.gumroad.com/l/bvxtu" target="_blank" class="inline-block bg-purple-600 px-12 py-4 rounded-xl text-xl font-bold hover:bg-purple-700 transition w-full md:w-auto">
+          Buy Template – Instant Access
+        </a>
+        
+        <p class="text-gray-600 text-xs mt-4">Secure payment via Card or PayPal</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-24 px-6 bg-black">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center fade-in">
+      Early <span class="gradient-text">Reviews</span>
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="feature-card bg-gray-900 p-8 rounded-2xl border border-gray-800 fade-in">
+        <div class="flex gap-1 text-yellow-400 text-xl mb-6">★★★★★</div>
+        <p class="text-gray-300 mb-8 italic">"Launched my ebook in 2 days. The design is professional and I made my first sale within 48 hours."</p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-400 to-pink-400"></div>
+          <div>
+            <p class="font-bold">Sarah K.</p>
+            <p class="text-gray-500 text-sm">Course Creator • Nairobi</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-card bg-gray-900 p-8 rounded-2xl border border-gray-800 fade-in">
+        <div class="flex gap-1 text-yellow-400 text-xl mb-6">★★★★★</div>
+        <p class="text-gray-300 mb-8 italic">"Clean design, easy to customize. I had zero coding experience and still got it done quickly."</p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400"></div>
+          <div>
+            <p class="font-bold">Marcus O.</p>
+            <p class="text-gray-500 text-sm">Business Coach • Lagos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-card bg-gray-900 p-8 rounded-2xl border border-gray-800 fade-in">
+        <div class="flex gap-1 text-yellow-400 text-xl mb-6">★★★★★</div>
+        <p class="text-gray-300 mb-8 italic">"Finally a template that understands the African market. Love the mobile optimization."</p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 to-emerald-400"></div>
+          <div>
+            <p class="font-bold">Jessica L.</p>
+            <p class="text-gray-500 text-sm">Designer • Cape Town</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-24 px-6 bg-gray-950">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-4xl font-bold mb-12 text-center">Questions?</h2>
+    
+    <div class="space-y-4">
+      <div class="bg-gray-900 rounded-xl border border-gray-800 overflow-hidden">
+        <button class="w-full px-6 py-4 text-left font-bold flex justify-between items-center" onclick="toggleFaq(this)">
+          Do I need coding skills?
+          <span>+</span>
+        </button>
+        <div class="faq-answer px-6">
+          <p class="text-gray-400 pb-4">No. The template uses simple HTML that you can edit with any text editor (Notepad, TextEdit, VS Code). We include a text guide showing exactly what to change.</p>
+        </div>
+      </div>
+      
+      <div class="bg-gray-900 rounded-xl border border-gray-800 overflow-hidden">
+        <button class="w-full px-6 py-4 text-left font-bold flex justify-between items-center" onclick="toggleFaq(this)">
+          How do I receive payments?
+          <span>+</span>
+        </button>
+        <div class="faq-answer px-6">
+          <p class="text-gray-400 pb-4">We recommend Gumroad or PayPal. The template includes a "Buy Button" that links to your chosen payment gateway. Just replace the link in the HTML file.</p>
+        </div>
+      </div>
+      
+      <div class="bg-gray-900 rounded-xl border border-gray-800 overflow-hidden">
+        <button class="w-full px-6 py-4 text-left font-bold flex justify-between items-center" onclick="toggleFaq(this)">
+          Can I use this for client projects?
+          <span>+</span>
+        </button>
+        <div class="faq-answer px-6">
+          <p class="text-gray-400 pb-4">Yes. Your purchase includes a commercial license. Use it for unlimited personal projects or client work. Just don't resell the template file itself.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="py-24 px-6 bg-black border-t border-gray-900">
+  <div class="max-w-3xl mx-auto text-center fade-in">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Launch?</h2>
+    <p class="text-gray-400 text-xl mb-8">Stop procrastinating. Start selling.</p>
+    <a href="https://ochangaedwin.gumroad.com/l/bvxtu" target="_blank" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 px-12 py-5 rounded-2xl text-xl font-bold hover:from-purple-700 hover:to-pink-700 transition">
+      Get the Template – $39
+    </a>
+    <p class="text-gray-600 mt-6 text-sm">30-day money-back guarantee</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-12 px-6 bg-black border-t border-gray-900 text-center">
+  <p class="text-gray-600 text-sm">
+    © 2024 CreatorPay™ Template. All rights reserved.
+  </p>
+  <p class="text-gray-700 text-xs mt-2">
+    This is a demo page. <a href="https://ochangaedwin.gumroad.com/l/bvxtu" class="text-purple-400 underline">Purchase the template</a> to use it for your own products.
+  </p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  
+  function toggleFaq(button) {
+    const answer = button.nextElementSibling;
+    const isOpen = answer.classList.contains('active');
+    
+    document.querySelectorAll('.faq-answer').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.faq-answer').forEach(el => el.previousElementSibling.querySelector('span').textContent = '+');
+    
+    if (!isOpen) {
+      answer.classList.add('ac
