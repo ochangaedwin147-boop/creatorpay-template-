@@ -97,6 +97,6 @@ IMAGE TIPS
 
 NEED HELP?
 ----------
-Contact: [ADD YOUR EMAIL]
+Contact: [ochangaedwin147@gmail.com]
 
 Thank you for your purchase!
